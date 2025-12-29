@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron | Python Developer & Operations Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#334155',
+                            accent: '#3b82f6',
+                            text: '#f8fafc',
+                            muted: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-brand-text tracking-wider">AARON<span class="text-brand-accent">.DEV</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#services" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#portfolio" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="#contact" class="bg-brand-accent hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Me</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brand-light">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">About</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Portfolio</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-accent">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-blue-500/30 bg-blue-500/10">
+                    <span class="text-brand-accent text-sm font-semibold tracking-wide uppercase">Operations Manager turned Developer</span>
+                </div>
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                    Automating Business with <br>
+                    <span class="text-brand-accent">Intelligent Software</span>
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-xl text-brand-muted">
+                    I build proprietary desktop applications that bridge the gap between complex operations and efficient automation. Specializing in Python, GUI development, and Hardware Integration.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#portfolio" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-accent hover:bg-blue-600 md:py-4 md:text-lg transition-all shadow-lg shadow-blue-500/20">
+                        View Commercial Projects
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border border-brand-muted/30 text-base font-medium rounded-md text-brand-muted hover:text-white hover:border-white md:py-4 md:text-lg transition-all">
+                        Discuss a Solution
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Decor -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-96 h-96 bg-cyan-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Technical Services</h2>
+                <p class="mt-4 text-brand-muted">Solving operational bottlenecks with code.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-brand-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom ERP & CRM</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Building "sidecar" applications that extend QuickBooks and standard ERPs with custom manufacturing logic and inventory tracking.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Workflow Automation</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Eliminating manual data entry using Local AI, OCR pipelines, and intelligent document processing agents.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-cyan-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Desktop GUIs</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Developing modern, cross-platform desktop applications (Windows/Mac/Linux) using Python & PySide6/Qt.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-microchip text-emerald-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hardware Integration</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Bridging the gap between software and industrial machines (Laser Engravers, Printers) via TCP/IP and Serial protocols.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#0b1120]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Featured Projects</h2>
+                <p class="mt-4 text-brand-muted">A selection of proprietary tools built for clients.</p>
+            </div>
+
+            <div class="space-y-24">
+                
+                <!-- Project 1: FabLogic -->
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                            <!-- Placeholder for Screenshot -->
+                            <div class="text-center">
+                                <i class="fas fa-cubes text-6xl text-brand-muted/30 mb-4"></i>
+                                <p class="text-brand-muted text-sm">FabLogic Interface Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h3 class="text-2xl font-bold text-white">FabLogic</h3>
+                            <span class="px-2 py-1 text-xs font-semibold bg-blue-500/20 text-blue-300 rounded border border-blue-500/30">ERP / Manufacturing</span>
+                        </div>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            A standalone desktop application acting as a dual-backend bridge for QuickBooks (Online & Desktop). It solves complex inventory challenges in the hose & gasket industry by implementing custom "nesting" algorithms to optimize material yield and minimize scrap.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Python 3.11</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">PySide6</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">SQLite</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">2D Bin Packing</span>
+                        </div>
+                        <a href="https://github.com/Bearded1derer/FabLogic" target="_blank" class="inline-flex items-center text-brand-accent hover:text-white font-medium transition-colors">
+                            View Project Details <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: AiInvoiceRecon -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-brain text-6xl text-brand-muted/30 mb-4"></i>
+                                <p class="text-brand-muted text-sm">AI Invoice Engine Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h3 class="text-2xl font-bold text-white">AI Invoice Recon</h3>
+                            <span class="px-2 py-1 text-xs font-semibold bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">Local AI / Fintech</span>
+                        </div>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            An on-premise pipeline using Local Vision Language Models (VLMs) to extract structured financial data from PDF invoices. Features a "Self-Correcting" Pydantic validation layer that mathematically verifies AI output to prevent hallucinations in financial records.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Local VLM</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">PyTorch</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Pydantic</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">OCR</span>
+                        </div>
+                        <a href="https://github.com/Bearded1derer/AiInvoiceRecon" target="_blank" class="inline-flex items-center text-brand-accent hover:text-white font-medium transition-colors">
+                            View Project Details <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: PDF Suite -->
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-file-pdf text-6xl text-brand-muted/30 mb-4"></i>
+                                <p class="text-brand-muted text-sm">PDF Suite Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h3 class="text-2xl font-bold text-white">PDF Suite</h3>
+                            <span class="px-2 py-1 text-xs font-semibold bg-emerald-500/20 text-emerald-300 rounded border border-emerald-500/30">Operations Tool</span>
+                        </div>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            A "Swiss Army Knife" for document operations. Integrates OpenCV for automatic scan cleanup (deskewing/thresholding) and features a bidirectional OCR interface where clicking text on the PDF highlights the raw text for rapid correction.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">CustomTkinter</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">OpenCV</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Tesseract</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">PyMuPDF</span>
+                        </div>
+                        <a href="https://github.com/Bearded1derer/PDF_Suite" target="_blank" class="inline-flex items-center text-brand-accent hover:text-white font-medium transition-colors">
+                            View Project Details <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Smart Image Editor -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-image text-6xl text-brand-muted/30 mb-4"></i>
+                                <p class="text-brand-muted text-sm">Editor Plugin System</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h3 class="text-2xl font-bold text-white">Smart Image Editor</h3>
+                            <span class="px-2 py-1 text-xs font-semibold bg-orange-500/20 text-orange-300 rounded border border-orange-500/30">Architecture</span>
+                        </div>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            A scalable desktop application built with a strict Plugin-Based Architecture. Allows for "hot-extending" functionality (like AI Background Removal) by dynamically loading Python modules at runtime. Handles heavy batch processing via threaded workers.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Plugin Architecture</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Rembg (AI)</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Threading</span>
+                        </div>
+                        <a href="https://github.com/Bearded1derer/SmartImageEditor" target="_blank" class="inline-flex items-center text-brand-accent hover:text-white font-medium transition-colors">
+                            View Project Details <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                 <!-- Project 5: CertCreator -->
+                 <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-industry text-6xl text-brand-muted/30 mb-4"></i>
+                                <p class="text-brand-muted text-sm">Laser Integration Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <h3 class="text-2xl font-bold text-white">CertCreator</h3>
+                            <span class="px-2 py-1 text-xs font-semibold bg-red-500/20 text-red-300 rounded border border-red-500/30">Industrial Automation</span>
+                        </div>
+                        <p class="text-brand-muted mb-6 leading-relaxed">
+                            Hardware-integrated automation tool that bridges digital orders with physical Epilog Laser Engravers. It programmatically generates SVGs for metal tags and streams printer-specific commands (PRN) directly to hardware IPs via TCP/IP sockets.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">Hardware I/O</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">TCP/IP</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-slate-700 text-slate-300">SVG Generation</span>
+                        </div>
+                        <a href="https://github.com/Bearded1derer/CertCreator" target="_blank" class="inline-flex items-center text-brand-accent hover:text-white font-medium transition-colors">
+                            View Project Details <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-brand-dark border-t border-white/10 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Let's Automate Your Business</h3>
+                    <p class="text-brand-muted mb-6 max-w-md">
+                        I am currently accepting new contracts for custom Python development and operational consulting. If you have a repetitive process that needs automating, let's talk.
+                    </p>
+                    <a href="mailto:your.email@example.com" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-brand-dark bg-white hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-envelope mr-2"></i> Contact Me
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Connect</h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="https://github.com/Bearded1derer" class="text-brand-muted hover:text-white transition-colors">
+                                    <i class="fab fa-github mr-2"></i> GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Availability</h4>
+                        <p class="text-brand-muted text-sm">
+                            Open for:<br>
+                            - Custom Development<br>
+                            - Automation Audits<br>
+                            - Legacy Migration
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-brand-muted text-sm">&copy; 2025 Aaron [Last Name]. All rights reserved.</p>
+                <p class="text-brand-muted text-xs mt-2 md:mt-0">Built with Python, Logic, and Caffeine.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Animation for Blobs -->
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
+
+</body>
+</html>
