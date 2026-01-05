@@ -62,6 +62,11 @@
             border-color: #3b82f6;
             box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
         }
+
+        /* Modal Transition Styles */
+        #imageModal {
+            transition: opacity 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -203,10 +208,11 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
+                        <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/FabLogic-Showcase/main/assets/Demo.gif" 
                                  alt="FabLogic HG Demo" 
-                                 class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                                 class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-cubes text-6xl text-brand-muted/30 mb-4\'></i><p class=\'text-brand-muted text-sm\'>FabLogic HG Demo Loading...</p></div>'">
                         </div>
                     </div>
@@ -234,10 +240,11 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
+                        <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/AiInvoiceRecon-Showcase/main/assets/demo.gif" 
                                  alt="AiInvoiceRecon Demo" 
-                                 class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                                 class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-brain text-6xl text-brand-muted/30 mb-4\'></i><p class=\'text-brand-muted text-sm\'>AI Invoice Engine Demo Loading...</p></div>'">
                         </div>
                     </div>
@@ -265,10 +272,11 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
+                        <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/PDF_Suite-Showcase/main/assets/demo.gif" 
                                  alt="PDF Suite Demo" 
-                                 class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                                 class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-file-pdf text-6xl text-brand-muted/30 mb-4\'></i><p class=\'text-brand-muted text-sm\'>PDF Suite Demo Loading...</p></div>'">
                         </div>
                     </div>
@@ -296,10 +304,11 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
+                        <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/SmartImageEditor-Showcase/main/assets/demo.gif" 
                                  alt="Smart Image Editor Demo" 
-                                 class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                                 class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-image text-6xl text-brand-muted/30 mb-4\'></i><p class=\'text-brand-muted text-sm\'>Editor Plugin Demo Loading...</p></div>'">
                         </div>
                     </div>
@@ -326,10 +335,11 @@
                  <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <div class="relative bg-brand-light rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center">
+                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
+                        <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/CertCreator-Showcase/main/assets/demo.gif" 
                                  alt="CertCreator Demo" 
-                                 class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                                 class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center\'><i class=\'fas fa-industry text-6xl text-brand-muted/30 mb-4\'></i><p class=\'text-brand-muted text-sm\'>Laser Integration Demo Loading...</p></div>'">
                         </div>
                     </div>
@@ -424,6 +434,62 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal (Hidden by default) -->
+    <div id="imageModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/95 backdrop-blur-md p-4 opacity-0" onclick="closeImageModal()">
+        <button class="absolute top-6 right-6 text-white/50 hover:text-white focus:outline-none transition-colors z-[101]">
+            <i class="fas fa-times text-4xl"></i>
+        </button>
+        <img id="modalImage" src="" alt="Full size preview" class="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+    
+    <!-- Scripts -->
+    <script>
+        function openImageModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            // Set source
+            modalImg.src = src;
+            
+            // Display modal
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            
+            // Trigger animation (small delay to allow display:block to render)
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('flex'); // Ensure flex is applied for centering
+                modalImg.classList.remove('scale-95');
+                modalImg.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+
+            // Start fade out
+            modal.classList.add('opacity-0');
+            modalImg.classList.remove('scale-100');
+            modalImg.classList.add('scale-95');
+
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modalImg.src = ''; // Clear src to stop playing if video/gif
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeImageModal();
+            }
+        });
+    </script>
     
     <!-- Animation for Blobs -->
     <style>
