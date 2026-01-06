@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Aaron Arpin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#334155',
+                            accent: '#3b82f6',
+                            text: '#f8fafc',
+                            muted: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <span class="text-xl font-bold text-brand-text tracking-wider">FAB<span class="text-brand-accent">LOGIC</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#about" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="index.html#services" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="index.html#portfolio" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="index.html#contact" class="bg-brand-accent hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Me</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brand-light">
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">About</a>
+                <a href="index.html#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Services</a>
+                <a href="index.html#portfolio" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Portfolio</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-accent">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="pt-32 pb-20 bg-brand-dark flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-white mb-8 border-b border-white/10 pb-4">Privacy Policy</h1>
+            
+            <div class="text-brand-muted space-y-8 leading-relaxed">
+                <!-- Last Updated -->
+                <div class="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 inline-block">
+                    <p class="text-sm text-blue-300 font-semibold">Last Updated: January 05, 2026</p>
+                </div>
+
+                <p>
+                    This Privacy Policy describes how "FabLogic" ("we," "us," or "our") collects, uses, and discloses your information when you use our website (https://bearded1derer.github.io/) and any related services, software, or applications (collectively, the "Service").
+                </p>
+                <p>
+                    By accessing or using the Service, you consent to the collection, use, and disclosure of your information in accordance with this Privacy Policy.
+                </p>
+
+                <!-- Section 1 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">1. Information We Collect</h2>
+                    <p class="mb-4">We may collect information about you in a variety of ways. The information we may collect via the Service includes:</p>
+                    
+                    <ul class="list-disc pl-5 space-y-2 ml-2">
+                        <li>
+                            <strong class="text-white">Personal Data:</strong> Personally identifiable information, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the Service or when you choose to participate in various activities related to the Service.
+                        </li>
+                        <li>
+                            <strong class="text-white">Derivative Data:</strong> Information our servers automatically collect when you access the Service, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Service.
+                        </li>
+                        <li>
+                            <strong class="text-white">Financial Data:</strong> Financial information, such as data related to your payment method (e.g., valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Service.
+                        </li>
+                    </ul>
+                    <p class="mt-4 p-4 bg-brand-light/30 rounded-lg text-sm border-l-4 border-brand-accent">
+                        <strong>Note:</strong> We store very limited, if any, financial information that we collect. Otherwise, all financial information is stored by our payment processor, <strong>Stripe</strong>, and you are encouraged to review their privacy policy and contact them directly for responses to your questions.
+                    </p>
+                </div>
+
+                <!-- Section 2 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">2. Use of Your Information</h2>
+                    <p class="mb-4">Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Service to:</p>
+                    <ul class="list-disc pl-5 space-y-2 ml-2">
+                        <li>Process payments and refunds.</li>
+                        <li>Email you regarding your account or order.</li>
+                        <li>Fulfill and manage purchases, orders, payments, and other transactions related to the Service.</li>
+                        <li>Generate a personal profile about you to make future visits to the Service more personalized.</li>
+                        <li>Increase the efficiency and operation of the Service.</li>
+                        <li>Monitor and analyze usage and trends to improve your experience with the Service.</li>
+                        <li>Prevent fraudulent transactions, monitor against theft, and protect against criminal activity.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 3 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">3. Disclosure of Your Information</h2>
+                    <p class="mb-4">We may share information we have collected about you in certain situations. Your information may be disclosed as follows:</p>
+                    <ul class="list-disc pl-5 space-y-2 ml-2">
+                        <li><strong class="text-white">Third-Party Service Providers:</strong> We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.</li>
+                        <li><strong class="text-white">Stripe:</strong> We use Stripe for payment, analytics, and other business services. Stripe collects identifying information about the devices that connect to its services. Stripe uses this information to operate and improve the services it provides to us, including for fraud detection. You can learn more about Stripe and read its privacy policy at <a href="https://stripe.com/privacy" class="text-brand-accent hover:underline">https://stripe.com/privacy</a>.</li>
+                        <li><strong class="text-white">By Law or to Protect Rights:</strong> If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 4 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">4. Security of Your Information</h2>
+                    <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.</p>
+                </div>
+
+                <!-- Section 5 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">5. Policy for Children</h2>
+                    <p>We do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us using the contact information provided below.</p>
+                </div>
+
+                <!-- Section 6 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">6. Controls for Do-Not-Track Features</h2>
+                    <p>Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online.</p>
+                </div>
+
+                <!-- Section 7 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">7. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+                </div>
+
+                <!-- Section 8 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">8. Contact Us</h2>
+                    <p class="mb-2">If you have questions or comments about this Privacy Policy, please contact us at:</p>
+                    <p>
+                        <strong class="text-white">Email:</strong> <a href="mailto:aaron.arpin84@gmail.com" class="text-brand-accent hover:underline">aaron.arpin84@gmail.com</a><br>
+                        <strong class="text-white">GitHub:</strong> <a href="https://github.com/Bearded1derer" class="text-brand-accent hover:underline">https://github.com/Bearded1derer</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] border-t border-white/10 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <p class="text-brand-muted text-sm">&copy; 2025 Aaron Arpin. All rights reserved.</p>
+                    <!-- Link back to home or same page is fine, usually unnecessary on privacy page itself but harmless -->
+                </div>
+                <p class="text-brand-muted text-xs mt-2 md:mt-0">Built with Python, Logic, and Caffeine.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
