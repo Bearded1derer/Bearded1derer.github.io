@@ -208,7 +208,6 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
                         <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/FabLogic-Showcase/main/assets/Demo.gif" 
                                  alt="FabLogic HG Demo" 
@@ -240,7 +239,6 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
                         <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/AiInvoiceRecon-Showcase/main/assets/demo.gif" 
                                  alt="AiInvoiceRecon Demo" 
@@ -272,7 +270,6 @@
                 <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
                         <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/PDF_Suite-Showcase/main/assets/demo.gif" 
                                  alt="PDF Suite Demo" 
@@ -304,7 +301,6 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
                         <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/SmartImageEditor-Showcase/main/assets/demo.gif" 
                                  alt="Smart Image Editor Demo" 
@@ -335,7 +331,6 @@
                  <div class="flex flex-col lg:flex-row items-center gap-12">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <!-- CHANGED: Added cursor-pointer and onclick for Modal, Added hover:scale to img -->
                         <div class="relative bg-black rounded-lg overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
                             <img src="https://raw.githubusercontent.com/Bearded1derer/CertCreator-Showcase/main/assets/demo.gif" 
                                  alt="CertCreator Demo" 
@@ -366,7 +361,7 @@
         </div>
     </section>
 
-    <!-- NEW Contact Section with Form -->
+    <!-- Contact Section -->
     <section id="contact" class="py-20 bg-brand-dark border-t border-white/10 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -429,7 +424,11 @@
     <footer class="bg-[#0b1120] border-t border-white/10 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-brand-muted text-sm">&copy; 2025 Aaron Arpin. All rights reserved.</p>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <p class="text-brand-muted text-sm">&copy; 2025 Aaron Arpin. All rights reserved.</p>
+                    <!-- ADDED LINK HERE -->
+                    <a href="privacy.html" class="text-brand-muted text-sm hover:text-brand-accent transition-colors">Privacy Policy</a>
+                </div>
                 <p class="text-brand-muted text-xs mt-2 md:mt-0">Built with Python, Logic, and Caffeine.</p>
             </div>
         </div>
