@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Aaron Arpin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#334155',
+                            accent: '#3b82f6',
+                            text: '#f8fafc',
+                            muted: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <span class="text-xl font-bold text-brand-text tracking-wider">FAB<span class="text-brand-accent">LOGIC</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#about" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="index.html#services" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="index.html#portfolio" class="hover:text-brand-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="index.html#contact" class="bg-brand-accent hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Me</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brand-light">
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">About</a>
+                <a href="index.html#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Services</a>
+                <a href="index.html#portfolio" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-accent">Portfolio</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-accent">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="pt-32 pb-20 bg-brand-dark flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-white mb-8 border-b border-white/10 pb-4">Terms of Service</h1>
+            
+            <div class="text-brand-muted space-y-8 leading-relaxed">
+                <!-- Last Updated -->
+                <div class="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 inline-block">
+                    <p class="text-sm text-blue-300 font-semibold">Last Updated: January 05, 2026</p>
+                </div>
+
+                <p>
+                    Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the https://bearded1derer.github.io/ website (the "Service") operated by "FabLogic" ("us", "we", or "our").
+                </p>
+                <p>
+                    Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.
+                </p>
+                <p class="font-bold text-white">
+                    By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+                </p>
+
+                <!-- Section 1 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">1. Intellectual Property</h2>
+                    <p>
+                        The Service and its original content, features, and functionality (including but not limited to code samples, portfolio projects, and custom software demonstrations) are and will remain the exclusive property of FabLogic and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of FabLogic.
+                    </p>
+                </div>
+
+                <!-- Section 2 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">2. Links To Other Web Sites</h2>
+                    <p class="mb-4">
+                        Our Service may contain links to third-party web sites or services that are not owned or controlled by FabLogic (such as GitHub, Stripe, or project dependencies).
+                    </p>
+                    <p>
+                        FabLogic has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that FabLogic shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+                    </p>
+                </div>
+
+                <!-- Section 3 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">3. Limitation of Liability</h2>
+                    <p>
+                        In no event shall FabLogic, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                    </p>
+                </div>
+
+                <!-- Section 4 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">4. Disclaimer</h2>
+                    <p>
+                        Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
+                    </p>
+                </div>
+
+                <!-- Section 5 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">5. Governing Law</h2>
+                    <p>
+                        These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.
+                    </p>
+                    <p class="mt-4">
+                        Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.
+                    </p>
+                </div>
+
+                <!-- Section 6 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">6. Changes</h2>
+                    <p>
+                        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+                    </p>
+                    <p class="mt-4">
+                        By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
+                    </p>
+                </div>
+
+                <!-- Section 7 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">7. Contact Us</h2>
+                    <p class="mb-2">If you have any questions about these Terms, please contact us:</p>
+                    <p>
+                        <strong class="text-white">Email:</strong> <a href="mailto:aaron.arpin84@gmail.com" class="text-brand-accent hover:underline">aaron.arpin84@gmail.com</a><br>
+                        <strong class="text-white">GitHub:</strong> <a href="https://github.com/Bearded1derer" class="text-brand-accent hover:underline">https://github.com/Bearded1derer</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] border-t border-white/10 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <p class="text-brand-muted text-sm">&copy; 2025 Aaron Arpin. All rights reserved.</p>
+                    <a href="privacy.html" class="text-brand-muted text-sm hover:text-brand-accent transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="text-brand-muted text-sm hover:text-brand-accent transition-colors">Terms of Service</a>
+                </div>
+                <p class="text-brand-muted text-xs mt-2 md:mt-0">Built with Python, Logic, and Caffeine.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
